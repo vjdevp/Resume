@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Vijay Resume</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" lang="en" content="open source x/html and css templates">
+	<meta name="author" content="mlp design">
+	<meta name="robots" content="index, follow">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap JS and dependencies (Popper and Bootstrap JS) CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+	<script>
+		// Function to display the selected page and hide the other
+		function showPage(pageId) {
+			// Hide all pages
+			var pages = document.querySelectorAll('.page');
+			pages.forEach(function (page) {
+				page.style.display = 'none';
+			});
+
+			// Display the selected page
+			document.getElementById(pageId).style.display = 'block';
+
+			// Update active class for menu items
+			var links = document.querySelectorAll('#topnav li a');
+			links.forEach(function (link) {
+				link.classList.remove('active');
+			});
+
+			// Add active class to the clicked link
+			var selectedLink = document.querySelector(`#topnav li a[href="#${pageId}"]`);
+			selectedLink.classList.add('active');
+		}
+
+		// Set the default page to 'home'
+		window.onload = function () {
+			showPage('home'); // Show the Home page by default
+
+		}
+	</script>
+
+</head>
+
+<body>
+	<!--start wrapper-->
+	<div id="wrapper">
+
+		<!--start body-->
+		<div id="body">
+
+			<!--start header-->
+			<div id="banner">
+				<h1>Vijay Kumar Sanaboina </h1>
+				<p>Mobile: 9000740154 | Mail: Vijaysetti30@gmail.com | PAN: GZQPS0342E</p>
+				<!-- menu -->
+				<label for="show-menu" class="responsive">&#9776;</label>
+				<input type="checkbox" id="show-menu" role="button">
+				<ul id="topnav">
+					<li><a href="#" onclick="showPage('home')" class="active"> Resume </a></li>
+					<li><a href="#" onclick="showPage('page2')">Project 1</a></li>
+					<li><a href="#" onclick="showPage('page3')">Project 2</a></li>
+					<li><a href="#" onclick="showPage('page4')">Project 3</a></li>
+					<li><a href="#" onclick="showPage('page5')">Own Project</a></li>
+				</ul>
+				<!-- end menu -->
+			</div>
+			<!--end of header-->
+			<!--start sidebar-->
+			<div id="sidebar">
+				<!-- Profile Glimpse Section -->
+				<div class="sidebar-section">
+					<h2 class="section-title">Profile Glimpse:</h2>
+					<p class="profile-description" style="text-align: justify;">
+						RHCSA Certified & Over 6+ years of experience in system administration, including installation, customized configuration, and administration of Linux servers (local data centers and web servers), shell scripting, and hands-on experience with AWS Cloud.
+					</p>
+					<p class="profile-description">
+						Willing to design optimized, smart, and unique solutions with automation to minimize rework efforts. Committed and results-oriented with a zeal to learn new technologies to make tasks simpler and more stable.
+					</p>
+				</div>
+				
+				<!-- Technical Competencies Section -->
+				<div class="sidebar-section">
+					<h2 class="section-title">Technical Competencies:</h2>
+					<ul class="competencies-list">
+						<li>RHEL 7,8,9 | Centos | Ubuntu | OS Patching | OS Migration</li>
+						<li>Installation & Configurations | Ansible | LVM | Apache Web | Deployments</li>
+						<li>Zabbix | Network Protocols | SELinux | Git | Shell Scripting | AWS</li>
+						<li>EC2 | S3 | IAM | VPC | CloudWatch | DHCP | DNS | NFS | DR-DC Activity</li>
+					</ul>
+				</div>
+			
+				<!-- Certifications Section -->
+				<div class="sidebar-section">
+					<h2 class="section-title">Certifications:</h2>
+					<ul class="certifications-list">
+						<li>
+							<a href="https://rhtapps.redhat.com/verify?certId=240-163-774">
+								<img src="redhat.png" alt="Redhat Certification" class="certification-image" style="width: 140px;border-radius: 10px;">
+							</a>
+						</li>
+					</ul>
+				</div>
+			
+				<!-- Links Section -->
+				<div class="sidebar-section">
+					<h2 class="section-title">Links:</h2>
+					<ul class="links-list">
+						<li><a href="https://www.linkedin.com/in/vijay-kumar-sanaboina-860546143/" target="_blank"><img src="linkedin.png" alt="linkedin" style="width: 80px;border-radius: 10px;"></a></li>
+						<li><a href="http://www.mlpdesign.net" target="_blank"><img src="GitHub-logo.png" alt="github" style="width: 90px;border-radius: 20px;"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<!--end of sidebar-->
+
+			<!--start containter-->
+			<div id="container">
+
+				<!--start content-->
+				<div id="content">
+					<div id="home" class="page" style="display:none;">
+						<!--post item-->
+						<div class="item">
+							<div class="container mt-1">
+								<h1 class="text-center mb-4"><strong>Career Timeline</strong></h1>
+
+								<!-- Responsive Table with Hover, Striped Rows, and Borders -->
+								<div class="table-responsive">
+									<table class="table table-striped table-hover table-bordered">
+										<thead class="table-dark">
+											<tr>
+												<th>No</th>
+												<th>Company</th>
+												<th>Role</th>
+												<th>Date</th>
+												<th>Years</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td><a href="https://www.payswiff.com" target="_blank">Payswiff Solution
+														Pvt Ltd.</a></td>
+												<td>Linux Administrator</td>
+												<td>13-Mar-2023 to till</td>
+												<td>1 Yr 6 Mos +</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td><a href="https://www.margadarsi.com" target="_blank">Margadarsi Chit
+														fund Pvt Ltd.</a></td>
+												<td>System Engineer</td>
+												<td>15-Mar-2019 to 13-Mar-2023</td>
+												<td>4 Yrs 1 Mon</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td><a href="https://www.leonia.in" target="_blank">Leonia Holistic
+														Destination</a></td>
+												<td>System Associate</td>
+												<td>18-May-2018 to 14-Mar-2019</td>
+												<td>11 Mos</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td><a href="https://www.choice-solutions.com" target="_blank">Choice
+														Solution Pvt Ltd.</a></td>
+												<td>Desktop Engineer</td>
+												<td>20-Dec-2012 to 07-Sep-2013</td>
+												<td>10 Mos</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="container mt-1">
+								<h1 class="roles-heading text-center mb-4"><strong>Roles and Responsibilities:</strong>
+								</h1>
+
+								<div class="card p-4 shadow-lg">
+									<div class="roles-list">
+										<!-- Use Bootstrap List Group to style without bullet points -->
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item">Installation of RHEL & Cent OS 7/8/9 Ubuntu
+												18.04/20.04 servers, Windows Server 2016, 2019 & 2022 and packages
+												installation.</li>
+											<li class="list-group-item">New servers’ installation and configuration for
+												new projects.</li>
+											<li class="list-group-item">Involved in several projects involving server
+												migrations | upgrades | Patching on both RHEL and Solaris Servers.</li>
+											<li class="list-group-item">Monitored server Activities like CPU | Memory |
+												Disk and Swap space usage to avoid any performance issue.</li>
+											<li class="list-group-item">Software packages and patch administration,
+												involving adding and removing software packages and updating patches.
+											</li>
+											<li class="list-group-item">Experience in planning installation migration
+												upgrade OS Linux, RHEL, Ubuntu, CentOS, deployments production Support.
+											</li>
+											<li class="list-group-item">Installation and Configuration of various
+												services like DNS, DHCP, NFS, Sendmail, Apache Web Server, samba, SSH,
+												http, RPM, YUM, Package management.</li>
+											<li class="list-group-item">Actively participated in disaster recovery (DR)
+												planning and execution, including scheduling, timing, and developing
+												rollback plans in collaboration with team members.</li>
+											<li class="list-group-item">Proficient in Ansible automation, with hands-on
+												experience in ad-hoc commands for tasks like server health checks,
+												connectivity assessments, patching, user and group management, and
+												deployments.</li>
+											<li class="list-group-item">Experienced in patch management, policy
+												implementation, and rollback planning to ensure system security and
+												stability.</li>
+											<li class="list-group-item">Experience in managing Ansible playbooks with
+												Ansible roles, groups variables, and inventory files and copying and
+												removing files on remote systems using file modules. Package
+												installation shells with custom home directory and passing password at
+												time of user creation.</li>
+											<li class="list-group-item">Used Ansible to document infrastructure and
+												application dependencies into version control.</li>
+											<li class="list-group-item">Wrote Ansible Playbooks in YML to manage
+												Configuration, Orchestrations, and deployment to remote machines.</li>
+											<li class="list-group-item">Customized the migration life cycle concepts and
+												implemented the best practices that ensure quality standards and less
+												downtime through the process.</li>
+											<li class="list-group-item">Built S3 Buckets and managed policies for S3
+												buckets and used S3 glacier for stronger and backup on AWS.</li>
+											<li class="list-group-item highlight-text">Amazon IAM Service enabled to
+												grant permissions and resources to users.</li>
+											<li class="list-group-item">Configured AWS Multi-factor Authentication in
+												IAM to Implement 2 Step authentication of user's access using Google
+												Authenticator and AWS Virtual MFA.</li>
+											<li class="list-group-item">Attended team meetings, change control meetings,
+												CAB meetings to discuss configuration/installation progress and upcoming
+												changes in Production and non-Production Environments.</li>
+											<li class="list-group-item">Managed roles and permissions of users with the
+												help of AWS IAM.</li>
+											<li class="list-group-item">Created Change Controls, Resolved Incident
+												Tickets and Problem Tickets using Jira ticketing tool, and managed
+												multiple tasks in a fast-paced environment under strict SLA, resolving
+												production incidents with minimum impact.</li>
+											<li class="list-group-item">Repaired and troubleshot disk issues like kernel
+												panic error, file system read-only mode using the fsck command.</li>
+											<li class="list-group-item">Pulled database backups regularly (daily,
+												monthly & annually) and designed shells for that using rsync,
+												username-password, and creating backup logs for error detection
+												purposes.</li>
+											<li class="list-group-item">User Account management, Group Account
+												Management, configuration dump terminals, adding modems, formatting and
+												partitioning disks, manipulating swap, local and remote printer
+												management, taking and restoring backups, and scheduling jobs.</li>
+											<li class="list-group-item">Provided workarounds for incidents that could
+												not be resolved immediately and supported ad hoc tasks as assigned by
+												the management.</li>
+											<li class="list-group-item">Responsible for setting up and troubleshooting
+												transactional replication, linked servers, able to quickly resolve
+												problems and ensure minimal end-user downtime.</li>
+											<li class="list-group-item">Designed shells to automate the daily tasks
+												(cron jobs, rsync, backup Scripts, package installation scripts on
+												remote nodes, user profile customization, and console-based interfaces
+												for some users through Shell to execute some programs).</li>
+											<li class="list-group-item">Created compressed backup Shell scripting and
+												took backups using tar, zip.bz2, rsync commands on daily, monthly basis,
+												and scheduled cron jobs for automatic execution.</li>
+											<li class="list-group-item">Configured passwordless authentication among
+												servers for remote shell execution.</li>
+											<li class="list-group-item">Logged into rescue mode if the server was unable
+												to boot and followed troubleshooting steps for issues like file system
+												read-only mode, bad blocks, kernel panic errors, etc., and used
+												single-user mode for root password recovery when necessary.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+
+						<!--end of another post item-->
+					</div>
+					<!-- Page 2 Content -->
+					<div id="page2" class="page" style="display:none;">
+						<div class="item">
+							<div class="container mt-5">
+								<h1 id="Projects" class="text-center"><strong>Project-1</strong></h1>
+								<div class="accordion" id="accordionExample">
+									<!-- Accordion Item 1: Project Overview (PAYSWIFF SOLUTIONS PVT LTD) -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseOne" aria-expanded="true"
+												aria-controls="collapseOne">
+												<strong>Company Details & Role</strong>
+											</button>
+										</h2>
+										<div id="collapseOne" class="accordion-collapse collapse show"
+											aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<table class="table">
+													<thead>
+														<tr>
+															<th>Company Name</th>
+															<th>Product Type</th>
+															<th>Designation</th>
+															<th>Duration</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>PAYSWIFF SOLUTIONS PVT LTD</td>
+															<td>Own Products</td>
+															<td>Linux Engineer</td>
+															<td>Mar 2023 to Present</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<!-- Accordion Item 2: Project Name and Description -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingTwo">
+											<button class="accordion-button collapsed" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+												aria-expanded="false" aria-controls="collapseTwo">
+												<strong>Project Name and Description</strong>
+											</button>
+										</h2>
+										<div id="collapseTwo" class="accordion-collapse collapse"
+											aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p><strong>Project Name:</strong> Internal Project</p>
+												<p><strong>Description:</strong> Deploying and managing various Linux
+													servers and applications.</p>
+												<p><strong>Certification:</strong> <a
+														href="https://rhtapps.redhat.com/verify?certId=240-163-774"
+														target="_blank">RHCSA</a></p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Accordion Item 3: Roles & Responsibilities (Part 1) -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingThree">
+											<button class="accordion-button collapsed" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseThree"
+												aria-expanded="false" aria-controls="collapseThree">
+												<strong>Roles & Responsibilities (Part 1)</strong>
+											</button>
+										</h2>
+										<div id="collapseThree" class="accordion-collapse collapse"
+											aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<h5>Roles & Responsibilities:</h5>
+												<ul>
+													<li>Worked as engineer – Operations (L1/L2 Support)</li>
+													<li>Installation of RHEL & Cent OS 6/7/8, Ubuntu 18.04/20.04
+														servers, Windows Server 2016, 2019 & 2022 and packages
+														installation.</li>
+													<li>Installing/Configuring Java, Tomcat8/9, Glassfish4.1, Node.js,
+														Angular, MySQL, Apache and other applications as per
+														requirement.</li>
+													<li>Assisted in the deployment and maintenance of over 250+ Linux
+														servers, honing skills in server management and configuration.
+													</li>
+													<li>Created and maintained user accounts, Groups, permissions, and
+														access rights, establishing a foundation for system security
+														protocols.</li>
+													<li>Supported the roll-out of system updates and patches through
+														Ansible, ensuring 99.9% system availability.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<!-- Accordion Item 4: Roles & Responsibilities (Part 2) -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingFour">
+											<button class="accordion-button collapsed" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseFour"
+												aria-expanded="false" aria-controls="collapseFour">
+												<strong>Roles & Responsibilities (Part 2)</strong>
+											</button>
+										</h2>
+										<div id="collapseFour" class="accordion-collapse collapse"
+											aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<ul>
+													<li>Conducted regular system maintenance tasks, ensuring the
+														reliability and stability of end-user computing platforms.</li>
+													<li>Automated server health checks, which reduced the mean time to
+														resolve (MTTR) server issues by 25%.</li>
+													<li>Implemented a security protocol that leveraged SELinux, reducing
+														system vulnerability exposure by over 50%.</li>
+													<li>Customized Ansible Playbooks for system automation tasks,
+														increasing the productivity of the admin team by 35%.</li>
+													<li>Hands-on experience handling Kernel panic issues like Control-D,
+														grub, bluescreen errors.</li>
+													<li>Created user-friendly documentation on IT procedures, enhancing
+														efficiency and user self-sufficiency.</li>
+													<li>Manage FTP Accounts: Create/Delete/Modify user accounts
+														information and resetting of passwords.</li>
+													<li>Configuring LVM and managing the volumes.</li>
+													<li>Installed and configured Apache server. Installed SSL
+														certificates. Renewed SSL yearly.</li>
+													<li>Responsible for Installation, Configuration, and support of
+														Tomcat application.</li>
+													<li>Deploying and maintaining various versions of Payswiff product,
+														as per demand.</li>
+													<li>Troubleshooting and configuring SSH, telnet related issues and
+														customizing the default port usage of SSH to some servers to
+														maintain company confidential information security purpose.</li>
+													<li>Responsible for monitoring the application and all the servers
+														on a daily basis.</li>
+													<li>Have a habit of documenting all the daily work done as a daily
+														report and sending it out to the manager.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Page 3 Content -->
+					<div id="page3" class="page" style="display:none;">
+						<div class="item">
+							<div class="container mt-5">
+								<h1 id="Projects" class="text-center"><strong>Project-2</strong></h1>
+								<div class="accordion" id="accordionExample">
+
+									<!-- Accordion Item 1: Project Overview (Margadarsi Chit Fund Pvt Ltd) -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseOne" aria-expanded="true"
+												aria-controls="collapseOne">
+												<strong>Company Details & Role</strong>
+											</button>
+										</h2>
+										<div id="collapseOne" class="accordion-collapse collapse show"
+											aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<table class="table">
+													<thead>
+														<tr>
+															<th>Company Name</th>
+															<th>Product Type</th>
+															<th>Designation</th>
+															<th>Duration</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Margadarsi Chit Fund Pvt Ltd</td>
+															<td>Own Products</td>
+															<td>System Engineer</td>
+															<td>Mar 2019 to Mar 2023</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<!-- Accordion Item 2: Project Name and Description -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingTwo">
+											<button class="accordion-button collapsed" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+												aria-expanded="false" aria-controls="collapseTwo">
+												<strong>Project Name and Description</strong>
+											</button>
+										</h2>
+										<div id="collapseTwo" class="accordion-collapse collapse"
+											aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p><strong>Project Name:</strong> Internal Project</p>
+												<p><strong>Description:</strong> Deploying and managing various Linux
+													servers and Desktop and Network.</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Accordion Item 3: Roles & Responsibilities (Part 1) -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingThree">
+											<button class="accordion-button collapsed" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseThree"
+												aria-expanded="false" aria-controls="collapseThree">
+												<strong>Roles & Responsibilities (Part 1)</strong>
+											</button>
+										</h2>
+										<div id="collapseThree" class="accordion-collapse collapse"
+											aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<h5>Roles & Responsibilities:</h5>
+												<ul>
+													<li>Installation of RHEL & Cent OS 6/7/8, Ubuntu 18.04/20.04
+														servers, and packages installation.</li>
+													<li>Installation and migration knowledge on physical servers like
+														HPe Proliant DL180, Power Edge T550 Tower Server, HPE DL360, IBM
+														X, Blade Series Server with ILO Configuration.</li>
+													<li>Involved in several projects involving server migrations,
+														upgrades, and patching on both RHEL and Solaris Servers.</li>
+													<li>Monitored server activities like CPU, Memory, Disk, and Swap
+														space usage to avoid any performance issues.</li>
+													<li>Software packages and patch administration, involving adding and
+														removing software packages and updating patches.</li>
+													<li>Maintaining a consistently high level of service delivery for
+														requests and changes.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<!-- Accordion Item 4: Roles & Responsibilities (Part 2) -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingFour">
+											<button class="accordion-button collapsed" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseFour"
+												aria-expanded="false" aria-controls="collapseFour">
+												<strong>Roles & Responsibilities (Part 2)</strong>
+											</button>
+										</h2>
+										<div id="collapseFour" class="accordion-collapse collapse"
+											aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<ul>
+													<li>Pulling database backups regularly (daily, monthly, and
+														annually) and designing shells for that by using rsync,
+														username-password, and creating backup logs for error detection
+														purposes.</li>
+													<li>User Account management, Group Account Management, configuration
+														dump terminals, adding modems, formatting and partitioning
+														disks, manipulating swap, local and remote printer management,
+														taking and restoring backups, scheduling jobs.</li>
+													<li>Handled several upgrades and patching tasks for RHEL and Solaris
+														servers.</li>
+													<li>Implemented a security protocol that leveraged SELinux, reducing
+														system vulnerability exposure by over 50%.</li>
+													<li>Created and maintained user accounts, groups, permissions, and
+														access rights, establishing a foundation for system security
+														protocols.</li>
+													<li>Performed regular system maintenance tasks, ensuring the
+														reliability and stability of the platforms.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<!-- Page 4 Content -->
+					<div id="page4" class="page" style="display:none;">
+						<div class="item">
+							<div class="container mt-5">
+								<h1 id="Projects" class="text-center"><strong>Project-3</strong></h1>
+								<div class="accordion" id="accordionExample">
+
+									<!-- Accordion Item 1: Project Overview (Margadarsi Chit Fund Pvt Ltd) -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseOne" aria-expanded="true"
+												aria-controls="collapseOne">
+												<strong>Company Details & Role</strong>
+											</button>
+										</h2>
+										<div id="collapseOne" class="accordion-collapse collapse show"
+											aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<table class="table">
+													<thead>
+														<tr>
+															<th>Company Name</th>
+															<th>Product Type</th>
+															<th>Designation</th>
+															<th>Duration</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Leonia Holistic</td>
+															<td>Own Products</td>
+															<td>Technical Associate</td>
+															<td>Mar 2018 to Mar 2019</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<!-- Accordion Item 2: Project Name and Description -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingTwo">
+											<button class="accordion-button collapsed" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+												aria-expanded="false" aria-controls="collapseTwo">
+												<strong>Project Name and Description</strong>
+											</button>
+										</h2>
+										<div id="collapseTwo" class="accordion-collapse collapse"
+											aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p><strong>Project Name:</strong> Internal Project</p>
+												<p><strong>Description:</strong> Deploying and managing Windows, Linux, Ubuntu, and Desktop and Network.</p>
+											</div>
+										</div>
+									</div>
+
+									
+
+									<!-- Accordion Item 4: Roles & Responsibilities (Part 2) -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingFour">
+											<button class="accordion-button collapsed" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseFour"
+												aria-expanded="false" aria-controls="collapseFour">
+												<strong>Roles & Responsibilities</strong>
+											</button>
+										</h2>
+										<div id="collapseFour" class="accordion-collapse collapse"
+											aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<ul>
+													<li>Working on Linux servers in virtualized environment</li>
+													<li>Creating Basic file permissions</li>
+													<li>Managing file systems (Creating file systems, extending file
+														systems)</li>
+													<li>Adding and Removing Packages using RPM and YUM</li>
+													<li>Hands-on experience in User Administration Activities - Account
+														Creation/Deletion/Modification</li>
+													<li>Installing Firmware Upgrades, kernel patches, system
+														configuration, performance tuning on C Unix/Linux systems</li>
+													<li>Install and test desktop software applications and internet
+														browsers</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Page 5 Content -->
+					<div id="page5" class="page" style="display:none;">
+						<div class="item">
+							<div class="container mt-5">
+								<h1 id="Projects" class="text-center"><strong>Own Project</strong></h1>
+								<div class="accordion" id="accordionExample">
+
+									<!-- Accordion Item 1: Project Overview (Margadarsi Chit Fund Pvt Ltd) -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseOne" aria-expanded="true"
+												aria-controls="collapseOne">
+												<strong>Company Details & Role</strong>
+											</button>
+										</h2>
+										<div id="collapseOne" class="accordion-collapse collapse show"
+											aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<table class="table">
+													<thead>
+														<tr>
+															<th>Company Name</th>
+															<th>Product Type</th>
+															<th>Designation</th>
+															<th>Duration</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Self Project</td>
+															<td>Web Depolyment</td>
+															<td>Linux environment</td>
+															<td>On Going</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<!-- Accordion Item 2: Project Name and Description -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingTwo">
+											<button class="accordion-button collapsed" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+												aria-expanded="false" aria-controls="collapseTwo">
+												<strong>Project Name and Description</strong>
+											</button>
+										</h2>
+										<div id="collapseTwo" class="accordion-collapse collapse"
+											aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p><strong>Project Name:</strong> Self Project</p>
+												<p><strong>Description:</strong> Installing Linux servers & Deploying web application.</p>
+											</div>
+										</div>
+									</div>
+
+									
+
+									<!-- Accordion Item 4: Roles & Responsibilities (Part 2) -->
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingFour">
+											<button class="accordion-button collapsed" type="button"
+												data-bs-toggle="collapse" data-bs-target="#collapseFour"
+												aria-expanded="false" aria-controls="collapseFour">
+												<strong>Roles & Responsibilities</strong>
+											</button>
+										</h2>
+										<div id="collapseFour" class="accordion-collapse collapse"
+											aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<ul>
+													<li>Linux Servers Installation.</li>
+													<li>Ansible & Ngnix Install and Configuration.</li>
+													<li>Good hands-on Experience in Ansible ad-hoc commands</li>
+													<li>Adding and Removing Packages using RPM and YUM</li>
+													<li>Hands-on experience in User Administration Activities - Account
+														Creation/Deletion/Modification</li>
+													<li>Installing Firmware Upgrades, kernel patches, system
+														configuration, performance tuning on C Unix/Linux systems</li>
+													<li>Install and test desktop software applications and internet
+														browsers</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<!--end of content-->
+
+				</div>
+
+				<!--end of container-->
+
+			</div>
+			<!--end of body-->
+
+			<!--start footer-->
+			<div id="footer">
+				<div>
+					<span class="left">2024 &copy; Copyright <a href="#">Vijay Kumar </a>. All rights reserved.</span>
+				<span class="right"><a href="#">Contact</a> | <a href="#">Site Map</a></span>
+				<p class="show-footer">2017 &copy; Copyright <a href="#">Your Name</a>. All rights reserved.<br /><a
+						href="#">Contact</a> | <a href="#">Site Map</a></p>
+				</div>
+			</div>
+			<!--end of footer-->
+
+		</div>
+		<!--end of wrapper-->
+
+		<!--start credits-->
+		<!--//Under CC-NC 3.0, this portion must be left intact and must not be hidden.//-->
+		<div id="credits">
+			<span><a href="http://www.mlpdesign.net" title="CSS &amp; HTML by MLP Design.net">CSS &amp; HTML</a> by MLP
+				Design<br />Licensed under <a rel="license"
+					href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial
+					3.0</a>.</span>
+		</div>
+		<!--end of credits-->
+
+</body>
+
+</html>

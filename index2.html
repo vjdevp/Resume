@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Vijay Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" lang="en" content="open source x/html and css templates">
+<meta name="author" content="mlp design">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="styles.css">
+<script>
+	// Function to display the selected page and hide the other
+	function showPage(pageId) {
+	  // Hide all pages
+	  var pages = document.querySelectorAll('.page');
+	  pages.forEach(function(page) {
+		page.style.display = 'none';
+	  });
+	  
+	  // Display the selected page
+	  document.getElementById(pageId).style.display = 'block';
+	  
+	  // Update active class for menu items
+	  var links = document.querySelectorAll('#topnav li a');
+	  links.forEach(function(link) {
+		link.classList.remove('active');
+	  });
+	  
+	  // Add active class to the clicked link
+	  var selectedLink = document.querySelector(`#topnav li a[href="#${pageId}"]`);
+	  selectedLink.classList.add('active');
+	}
+  
+	// Set the default page to 'home'
+	window.onload = function() {
+	  showPage('home'); // Show the Home page by default
+	  
+	}
+  </script>
+</head>
+
+<body>
+<!--start wrapper-->
+<div id="wrapper">
+
+<!--start body-->
+<div id="body">
+
+<!--start header-->
+<div id="banner">
+<h1>Vijay Kumar Sanaboina </h1>
+<p>Mobile: 9000740154 | Mail: Vijaysetti30@gmail.com | PAN: GZQPS0342E</p>
+<!-- menu -->
+<label for="show-menu" class="responsive">&#9776;</label>
+<input type="checkbox" id="show-menu" role="button">
+<ul id="topnav">
+	<li><a href="#" onclick="showPage('home')" class="active">Resume</a></li>
+	<li><a href="#" onclick="showPage('page2')">Project 1</a></li>
+	<li><a href="#" onclick="showPage('page3')">Project 2</a></li>
+	<li><a href="#" onclick="showPage('page4')">Project 3</a></li>
+	<li><a href="#" onclick="showPage('page5')">Own Project</a></li>
+  </ul>
+<!-- end menu -->
+</div>
+<!--end of header-->
+	<!--start sidebar-->
+	<div id="sidebar">
+		<h2>Profile Glimpse:</h2>
+		<p>RHCSA Certified & Over 6 +  years of  experience as system administration in installation, customized configuration & administration of Linux servers as local data centers and web servers, shell scripting, hands on experience AWS Cloud.</p>
+		<p>Willing to design as standard, optimized and think in smart & unique way with accurate and automate the tasks and minimize the re-work efforts, commitment, result oriented, zeal to learn new technologies to make the task simpler and stable.</p>
+		<h2>Technical Competencies:</h2>
+		<ul>
+		RHEL 7,8,9 | Centos | Ubuntu | Os Patching | Os Migration | installation & Configurations | Ansible | LVM |Apache Web | Deployments | Zabbix | Network Protocols | SELinux | Git | Shell Scripting | AWS | EC2 | S3 | IAM | VPC| CloudWatch | DHCP | DNS | NFS | Apache | DR-DC Activity 
+		</ul>
+		<h2>Certifications:</h2>
+		<ul>
+        <li><a href="http://twitter.com/mlpdesign">RHCSA</a></li>			
+		</ul>
+		<h2>Links</h2>
+		<ul>
+			<li><a href="http://twitter.com/mlpdesign">Linkedin</a></li>
+			<li><a href="http://www.mlpdesign.net">GIT</a></li>
+		</ul>		
+	</div>
+	<div class="clear"></div>
+	<!--end of sidebar-->
+
+	<!--start containter-->
+	<div id="container" >
+			
+		<!--start content-->
+		<div id="content">
+			<div id="home" class="page" style="display:none;">
+					<!--post item-->
+				<div class="item">
+					<h1>Career TimeLine:</h1>
+					
+	     
+       <p>#	||www. payswiff.com	||        Linux Administrator || 13-Mar-2023 to till || 1 Yr 6 Mos +</p>
+      <p> #	||	www.margadarsi.com	||        System engineer||	     15-Mar-2019 to 13-Mar-2023||	4 Yrs 1 Mon</p>
+      <p> #	||	www.leonia.in	         ||   System Associate	||18-May-2018 to 14-Mar-2019	||11 Mos</p>
+      <p> #	||www.choice-solutions.com	||Desktop engineer	||20-Dec-2012 to 07-Sep-2013	||10 Mos</p>
+	  
+                     <h1> Roles and Responsibilities:</h1>
+					<p>●	Installation of RHEL & Cent OS 7/8/9 Ubuntu 18.04/20.04 servers, Windows Server 2016,2019 & 2022 and packages installation.
+<p>●	New servers’ installation and configuration for new projects.</p>
+<p>●	Involved in several projects involving server migrations | upgrades | Patching on both RHEL and Solaris Servers. </p>  
+<p>●	Monitored server Activities like CPU | Memory | Disk and Swap space usage to avoid any performance issue.</p>
+<p>●	Software packages and patch administration, involving adding and removing software packages and updating patches.</p>
+<p>●	Experience in planning installation migration upgrade OS Linux, RHEL, Ubuntu, CentOS, deployments production Support.</p>
+<p>●	Installation and Configuration various services like DNS, DHCP, NFS, Sendmail, Apache Web Server, samba, SSH, http, RPM, YUM, Package management.</p>
+<p>●	Actively participated in disaster recovery (DR) planning and execution, including scheduling, timing, and developing rollback plans in collaboration with team members.</p>
+<p>●	Proficient in Ansible automation, with hands-on experience in ad-hoc commands for tasks like server health checks, connectivity assessments, patching, user and group management, and deployments.</p>
+<p>●	Experienced in patch management, policy implementation, and rollback planning to ensure system security and stability.</p>
+<p>●	Experience in manage Ansible playbooks with Ansible roles, groups variables and inventory files and copy and remove files on remote systems using file modules. Package installation shells with custom home directory and passing password at time of user creation .</p>
+<p>●	Used Ansible to document infrastructure and application dependencies into version control.</p>
+<p>●	Wrote Ansible Playbooks in Yml to manage Configuration, Orchestrations and deployment to remote machines.</p>
+<p>●	Customize the migration life cycle concepts and implements the best practices that ensure quality standards and less downtime through the process.</p>
+<p>●	Built S3 Buckets and managed polices for S3 buckets and used S3 glacier for stronger and backup on AWS.</p>
+<p>●	Amazon IAM Service enabled to grant permissions and resources to users.</p>
+<p>●	Configure AWS Multi factor Authentication in IAM to Implement 2 Step authentication of user's access using Google Authenticator and AWS Virtual MFA</p>
+<p>●	Attend team meetings, change control meetings, CAB meetings to configuration/ installation progress and upcoming changes in Production and non-Production Environments.</p>
+<p>●	Managed roles and permissions of user with the help of AWS IAM.</p>
+<p>●	Creating Change Controls, Resolving Incident Tickets and problem Tickets using Jira ticketing tool, and ability to multitask in a fast-paced environment under strict SLA and resolve production incidents with minimum impact.</p>
+<p>●	Repairing and troubleshooting disk issues like kernel panic error, file system read only mode using fsck command.</p>
+<p>●	Pulling database backups regularly i.e, daily, monthly & annually and design shells for that by using rsync etc, username-password and creating backup logs for error detection purpose.</p>
+<p>•	User Account management, Group Account Management, configuration dump terminals, adding modems, formatting and partitioning disks, manipulating swap, local and remote printer management, taking and restoring backup, scheduling jobs.</p>
+<p>●	Provides workaround for incidents that cannot be resolved immediately and support ad hoc tasks | relevant responsibilities as assigned by the management.</p>
+<p>●	Responsible for setting up and troubleshooting transactional replication, linked servers able to quickly resolve problems and ensure minimal end user down time.</p>
+<p>●	Design shells to automate the daily tasks | cron jobs | rsync | backup Scripts | package installation scripts on  remote  nodes | user  profile customization | Console  based interface  apart  from  CLI  to some users through only Shell to execute some programs.</p>
+<p>●	Creating compressed backup Shell scripting and taking backups using tar, zip.bz2, rsync commands on daily, monthly basis and some backups are scheduled cron jobs which a shell will  get executed  if  no  mandatory  process  Is going,  if  so  it will automatically executed after specified time interval.</p>
+<p>●	Configuring password less authentication among servers for remote shell execution using.</p>
+<p>●	Login to rescue mode if server was unable to boot and follow some troubleshooting steps like file system read only mode, bad blocks presence, kernel panic errors etc.  and single user mode for root password recovery for user systems when necessary.</p>
+
+					
+					
+				</div>
+				
+				<!--end of another post item-->	
+			</div>		
+			 <!-- Page 2 Content -->
+			 <div id="page2" class="page" style="display:none;">
+				<div class="item">
+				  <h1>Project 2</h1>
+				  <p>This is the Page 2 content.</p>
+				</div>
+			  </div>
+		  
+			  <!-- Page 3 Content -->
+			  <div id="page3" class="page" style="display:none;">
+				<div class="item">
+				  <h1>#Project 3</h1>
+				  <p>This is the Page 3 content.</p>
+				</div>
+			  </div>
+		  
+			  <!-- Page 4 Content -->
+			  <div id="page4" class="page" style="display:none;">
+				<div class="item">
+				  <h1>HI Hello</h1>  <p>* Donec non dui. Morbi fringilla imperdiet lorem. Fusce risus diam,</p>
+				  <p>* Donec non dui. Morbi fringilla imperdiet lorem. Fusce risus diam,</p>
+				  <p>* rutrum eu, hendrerit et, accumsan non, neque.</p>
+				  <p style="font-style: italic;">* Fusce vitae pede ut massa sodales mattis.<p>
+				  <p>Nulla sed justo. Integer nec sem vel tellus tempor gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc faucibus. Nullam nulla ipsum, accumsan sed, tempus sed, adipiscing a, metus. Curabitur varius commodo eros.</p>
+				</div>
+			  </div>
+		  
+			  <!-- Page 5 Content -->
+			  <div id="page5" class="page" style="display:none;">
+				<div class="item">
+				 <h1>#Project 5</h1>
+				  <p>This is the Page 3 content.</p> 
+			  </div>
+		</div>
+		<!--end of content-->
+
+	</div>
+	
+	<!--end of container-->
+
+</div>
+<!--end of body-->
+
+	<!--start footer-->
+	<div id="footer">
+		<span class="left">2024 &copy; Copyright <a href="#">Vijay Kumar </a>. All rights reserved.</span>
+		<span class="right"><a href="#">Contact</a> | <a href="#">Site Map</a></span>
+		<p class="show-footer">2017 &copy; Copyright <a href="#">Your Name</a>. All rights reserved.<br /><a href="#">Contact</a> | <a href="#">Site Map</a></p>
+	</div>
+	<!--end of footer-->	
+
+</div>
+<!--end of wrapper-->
+
+	<!--start credits-->
+	<!--//Under CC-NC 3.0, this portion must be left intact and must not be hidden.//-->
+	<div id="credits">
+	<span><a href="http://www.mlpdesign.net" title="CSS &amp; HTML by MLP Design.net">CSS &amp; HTML</a> by MLP Design<br />Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0</a>.</span>
+	</div>
+	<!--end of credits-->
+	
+</body>
+
+</html>
+
